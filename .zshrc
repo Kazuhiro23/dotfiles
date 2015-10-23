@@ -152,7 +152,6 @@ elif which putclip >/dev/null 2>&1 ; then
 fi
  
  
- 
 ########################################
 # OS 別の設定
 case ${OSTYPE} in
@@ -168,3 +167,9 @@ case ${OSTYPE} in
 esac
  
 # vim:set ft=zsh:
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
+export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH:$PATH"
+export HOMEBREW_GITHUB_API_TOKEN=32f8358b441c1275f74cbc910e299fe33bfa55c9
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
