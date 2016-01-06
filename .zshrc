@@ -172,3 +172,5 @@ export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
 export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH:$PATH"
 export HOMEBREW_GITHUB_API_TOKEN=32f8358b441c1275f74cbc910e299fe33bfa55c9
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PGDATA=/usr/local/var/postgres
+export PATH=/usr/local/bin:$PATH
