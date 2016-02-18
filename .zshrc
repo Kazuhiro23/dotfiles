@@ -67,7 +67,12 @@ function _update_vcs_info_msg() {
     RPROMPT="${vcs_info_msg_0_}"
 }
 add-zsh-hook precmd _update_vcs_info_msg
- 
+
+########################################
+# git環境下でキャレット(^)の自動エスケープ
+fpath=(~/.functions ${fpath})
+autoload -Uz git-escape-magic
+git-escape-magic 
  
 ########################################
 # オプション
@@ -174,3 +179,7 @@ export HOMEBREW_GITHUB_API_TOKEN=32f8358b441c1275f74cbc910e299fe33bfa55c9
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PGDATA=/usr/local/var/postgres
 export PATH=/usr/local/bin:$PATH
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/araikazuhiro/.sdkman"
+[[ -s "/Users/araikazuhiro/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/araikazuhiro/.sdkman/bin/sdkman-init.sh"
