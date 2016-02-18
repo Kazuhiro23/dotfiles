@@ -7,3 +7,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/araikazuhiro/.sdkman"
+[[ -s "/Users/araikazuhiro/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/araikazuhiro/.sdkman/bin/sdkman-init.sh"
