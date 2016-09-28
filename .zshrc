@@ -179,6 +179,9 @@ export HOMEBREW_GITHUB_API_TOKEN=32f8358b441c1275f74cbc910e299fe33bfa55c9
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PGDATA=/usr/local/var/postgres
 export PATH=/usr/local/bin:$PATH
+export PATH=$PATH:~/Library/Android/sdk/platform-tools/
+export JAVA_HOME=`/usr/libexec/java_home`
+export EDITOR='subl -w'
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/araikazuhiro/.sdkman"
