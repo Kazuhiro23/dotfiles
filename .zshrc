@@ -124,6 +124,7 @@ bindkey '^R' history-incremental-pattern-search-backward
 # エイリアス
  
 alias la='ls -a'
+alias lla='ls -la'
 alias ll='ls -l'
  
 alias rm='rm -i'
@@ -195,12 +196,18 @@ export HOMEBREW_GITHUB_API_TOKEN=32f8358b441c1275f74cbc910e299fe33bfa55c9
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PGDATA=/usr/local/var/postgres
 export PATH=/usr/local/bin:$PATH
-export PATH=$PATH:~/Library/Android/sdk/platform-tools/
+export PATH=$PATH:~/Library/Android/sdk/platform-tools
 export JAVA_HOME=`/usr/libexec/java_home`
 #export EDITOR='subl -w'
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+$ rbenv init
+# Load rbenv automatically by appending
+# the following to ~/.bash_profile:
+
+eval "$(rbenv init -)"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/araikazuhiro/.sdkman"
