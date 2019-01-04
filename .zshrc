@@ -192,18 +192,18 @@ esac
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
 export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH:$PATH"
-export HOMEBREW_GITHUB_API_TOKEN=32f8358b441c1275f74cbc910e299fe33bfa55c9
+export HOMEBREW_GITHUB_API_TOKEN=a1c1128cea1e75567424cce323533d6289d5385b
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PGDATA=/usr/local/var/postgres
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:~/Library/Android/sdk/platform-tools
 export JAVA_HOME=`/usr/libexec/java_home`
 #export EDITOR='subl -w'
-
+export GOPATH=$HOME/go
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-$ rbenv init
+# $ rbenv init
 # Load rbenv automatically by appending
 # the following to ~/.bash_profile:
 
